@@ -5,86 +5,81 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --white: rgb(255, 255, 255);
+  --color1: rgba(202, 41, 181, 0.7);
+  --color2: rgba(102, 0, 143, 0.8);
+  --color3: rgba(216,14,91,.9);
+  --color4: rgb(144,9,125);
+  --color5: rgb(194,25,139);
+  --shadow: rgba(219, 0, 135, 0.4);
+}
 html {
   font-size: 62.5%;
   font-family: "Raleway";
 }
-body {font-family: inherit;}
-
-:root {
-  --color-white: #fff;
-  --color-light-white: #eee;
-  --color-tomato: #d40640;
-  --color-purple-transparent: rgba(88,24,69,.9);
-  --color-pink-transparent: rgba(216,14,91,.9);
-  --color-orange: #ff3c00;
-  --color-light-black: #222;
-  --color-black: #000;
-  --shadow: rgba(0,0,0,.4);
+body {
+  font-family: inherit;
 }
-
 .App {
   text-align: center;
 }
-
 .App-header {
   background-color: #282c34;
   height: 7vh;
   width: 100%;
-  font-family: "Raleway";
-  font-size: calc(10px + 2vmin);
-  color: white;
-  top: 0;
+  font-family: "Raleway", monospace;
+  letter-spacing: 0.8em;
+  font-style: italic;
+  font-size: 3em;
+  color:rgba(200,200,200,0.9);
+  padding-top: 1rem;
+  padding-left: 2em;
+  text-align: left;
 }
-
 .CalcApp {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to bottom right, var(--color-pink-transparent), var(--color-purple-transparent)), url(https://i.pinimg.com/originals/91/b5/cd/91b5cdab51e207263169904b227503b4.jpg);
+  background-image: linear-gradient(to bottom right, var(--color3), var(--color2)), url(https://i.pinimg.com/originals/a7/aa/14/a7aa14d5f102408e5d1664d31ce18ec5.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
-
 .calculator {
   height: 80vh;
   width: 40rem;
   box-shadow: 0 2rem 4rem var(--shadow);
-  background-color: var(--color-light-black);
+  border: 1px solid var(--shadow);
+  background-image: linear-gradient(to bottom right, var(--color3), var(--color2));
 }
-
 .result-screen {
   height: 17vh;
   font-size: 7rem;
   font-weight: 600;
- 
   align-items: flex-end;
 }
-
-  .computation-screen {
-    height: 8vh;
-    font-size: 2.75rem;
-    padding: 1rem 0;
-  }
-
-.result-screen, .computation-screen
-  {display: flex;
-    justify-content: flex-end;
+.computation-screen {
+  height: 8vh;
+  font-size: 2.75rem;
+  padding: 1rem 0;
+}
+.result-screen, .computation-screen {
+  display: flex;
+  justify-content: flex-end;
 }
 .screen {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
-   box-sizing: border-box; 
+  box-sizing: border-box; 
   height: 25vh;
   width: 100%;
   padding: 0 2rem;
   overflow: hidden;
   white-space: no-wrap;
-  color: var(--color-light-white);
-  background-color: var(--color-tomato);
+  color: var(--white);
+  background-image: linear-gradient(to bottom right, var(--color1), rgba(1,1,1,0));
 }
 .keypad {
   height: 55vh;
@@ -96,44 +91,44 @@ body {font-family: inherit;}
   display: flex; /* To control the dimension */
   color: white;
 }
-
 .btn {
   width: 25%;
   height: 100%;
   font-size: 3rem;
   font-family: inherit;
-  background-color: var(--color-white);
+  background-color: rgba(1,1,1,0);
   border: 1px solid transparent;
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all .2s;
+  color: var(--white);
 }
 .btn:hover {
-  color: var(--color-light-white);
-  background-color: var(--color-tomato);
+  color: var(--white);
+  background-color: var(--color1);
 }
 .btn:active {
   transform: scale(.95);
 }
-
 .btnlarge {
   width: 50%;
-  color: var(--color-white);
-  background-color: var(--color-tomato);
+  color: var(--white);
+  border: 0px solid transparent;
+  outline: none; 
+  background-image: linear-gradient(to left, var(--color4), var(--color5));
   transition: all .2s;
 }
 .btnlarge:hover {
-  background-color: var(--color-white);
-  color: var(--color-tomato);
+  background-color: var(--white);
+  color: var(--white);
 }
-
 .NotepadApp {
   height: 80vh;
   width: 50em;
   background-color: pink;
-right: 0;
-position: fixed;
+  right: 0;
+  position: fixed;
 }
 

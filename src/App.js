@@ -5,19 +5,14 @@ import Calculator from './layout/Calculator/Calculator';
 
 function App() {
   return (
-    
       <div className="App">
-
       <header className="App-header">
-        Header
+        c a l c u l a t o r
       </header>
       <div className="CalcApp">
         <Calculator />
       </div>
-     
-      </div>
-      
-    
+      </div>    
   );
 }
 
