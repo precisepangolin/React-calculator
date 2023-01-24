@@ -24,5 +24,11 @@ npm start
 ## Screenshots
 ![react calculator](https://user-images.githubusercontent.com/61357898/213882255-738f7a9f-d90e-4faf-a740-6294222be67c.png)
 
+<details>
+<summary>Click for gif</summary>
+<img src="https://user-images.githubusercontent.com/61357898/214312686-cadb19ba-d9fc-4327-bb65-b216eaf58a22.gif">
+</details>
+
 ## Credits
 Kudos to multiple React tutorials that helped me and to the author of the original background image.
+
